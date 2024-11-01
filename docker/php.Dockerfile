@@ -1,4 +1,6 @@
-FROM php:8.3-fpm
+ARG VERSION
+
+FROM php:${VERSION}-fpm
 
 RUN apt-get update
 
